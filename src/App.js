@@ -83,7 +83,7 @@ function App() {
     <div className="container">
       <h1>Procurar Emails de Clientes</h1>
       <div className="input-group">
-        <label htmlFor="clientesAtivosInput">Clientes Ativos:</label>
+        <label htmlFor="clientesAtivosInput">Clientes da Base:</label>
         <textarea
           id="clientesAtivosInput"
           value={clientesAtivosInput}
@@ -91,10 +91,10 @@ function App() {
           rows={5}
           cols={50}
         />
-        <button onClick={adicionarClienteAtivo}>Adicionar Cliente Ativo</button>
+        <button onClick={adicionarClienteAtivo}>Adicionar Clientes da Base</button>
       </div>
       <div className="input-group">
-        <label htmlFor="clientesProcurandoInput">Clientes Procurando:</label>
+        <label htmlFor="clientesProcurandoInput">Clientes Ativos:</label>
         <textarea
           id="clientesProcurandoInput"
           value={clientesProcurandoInput}
@@ -102,7 +102,7 @@ function App() {
           rows={5}
           cols={50}
         />
-        <button onClick={adicionarClienteProcurando}>Adicionar Cliente Procurando</button>
+        <button onClick={adicionarClienteProcurando}>Adicionar Clientes Ativos</button>
       </div>
       <div className="input-group">
         <label htmlFor="clientesAtivosFileInput">Enviar arquivo CSV para Clientes Ativos:</label>
